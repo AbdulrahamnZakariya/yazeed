@@ -1,0 +1,1038 @@
+/*This is an External CSS file*/
+
+
+/*Body style*/
+body
+{
+    margin: auto;
+    background-image: url(images/Background.png);
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+
+/* Navigation Bar */
+.navbar
+{
+    background-color: rgb(255, 255, 255);
+    position: fixed;                        /* Make the Nav Bar stay at the top or the bottom of the page even when the user scrolling*/
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    font-family: Calibri light;
+}
+.navbar a
+{
+    float: right;
+    display: block;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding: 10px 10px;
+    text-decoration: none;                  /* To remove underline from the text */
+    font-size: 20px;
+    margin-top: 5px;
+}
+.navbar a:hover
+{
+    color: rgb(255, 121, 0);
+    transition: color 0.3s;                /* Smooth color transition */
+}
+
+/* For Program Name text as it's the first row in the navigation bar*/
+.navbar p:first-child                      
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+    font-family: Calibri light;
+    font-size: 20px;
+    color: #FFD436;
+    font-weight: lighter;
+}
+/* For Program Name text as it's the first row in the navigation bar*/
+
+.navbar img                      
+{
+   
+    margin-left: 30px;
+    float:left;
+}
+
+/*AboutContact*/
+.AboutContact
+{
+    padding-bottom:10px;
+    padding-top:10px;
+    letter-spacing: 1px;
+    font-family: Calibri;
+    background-color: rgb(255, 121, 0);
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
+/*AboutProgram8*/
+
+/* StudentInfo*/
+
+.Homegrid-container 
+{
+    display: grid;
+    /*background-color: #2196F3;*/
+    grid-template-rows:40px 300px;
+    /*column-gap: 10px;*/
+    /*grid-row-gap: 10px*/;   
+}
+
+.Homegrid-item 
+{
+    background-color: rgba(100, 255, 255, 0.8);
+}
+
+/*Hi Grid*/
+.itemA 
+{
+    padding-top: 10px;
+    padding-left: 350px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    font-size: 45px;
+    font-family: Calibri;
+    font-style: italic;   
+}
+
+/*Pic Grid*/
+.itemB 
+{
+    padding-top: 10px;
+    padding-right: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    padding-bottom: 30px;
+}
+
+/*Brief Grid*/
+.itemC 
+{
+    padding-left: 370px;
+    display: flex;
+    justify-content: left;
+    align-items:flex-start;
+    grid-column: 1 / span 2;
+    grid-row:2;
+    font-size: 25px;
+    font-family: Calibri;
+}
+
+
+
+/*ProgramAssigments (list page)*/
+
+.ProgramAssigments
+{
+    text-align: center;
+    color: black;
+   
+    height: auto;
+    z-index: 1;
+}
+ 
+.ProgramAssigmentsTitle
+{ 
+    padding: 10px;
+    padding-bottom: 35px;
+    height: 30px;
+    text-align: center;
+    font-family: Calibri;
+    font-weight: bold;
+    font-size:18px;
+}
+
+.ProgramAssigmentsBlocks                              
+{
+    position: relative;
+    display: block;
+    margin-left: 70px;
+    margin-top: 40px;
+    border: 5px solid #ffffff;
+    float: left;
+    width: 400px;
+}
+.ProgramAssigmentsBlocks img                    /* To make the images size matches with the border size */
+{
+    width: 300px;
+    height:auto;
+}
+
+.ProgramAssigmentsBlocks:hover                  /* Hover is used to select elements when the mouse over an element */
+{
+    border: 5px solid rgb(0, 0, 0);
+}
+
+.ProgramAssigmentsBlocks-1                       
+{
+    position: relative;
+    display: block;
+    margin-left: 550px;
+    margin-top: 40px;
+    border: 5px solid #ffffff;
+    float: left;
+    width: 400px;
+}
+.ProgramAssigmentsBlocks-1 img 
+{
+    width: 100%;
+    height:auto;
+}
+
+.ProgramAssigmentsBlocks-1:hover                /* Hover is used to select elements when the mouse over an element */
+{
+    border: 5px solid rgb(0, 0, 0);
+}
+
+
+
+/* Assigment(Task page)*/
+
+/* Assignment Header */
+.Assignmentsbackgroundimg                       /* to place header pic at the top of all asssignments pages */
+{
+    background-image:url(images/ProgramAssignment/Innovation/Dummy.png);
+    background-size: 100% 100%;                 /*background-size: 1367px 420px;*/
+    padding: 160px;
+}
+
+.AssignmentHeader           
+{
+    position: relative;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    height: auto;
+} 
+
+.one 
+{ 
+    text-align: center;
+    color:#000000; 
+    font-size:25px; 
+    font-family: Calibri;
+    font-weight: lighter;
+}
+
+.two 
+{ 
+    text-align: center;
+    color:#000000; 
+    font-size:56px; 
+    font-family: Calibri;
+    font-weight: bolder;
+}
+
+/* Assignment Documentation */
+.AssignmentDocumentation
+{ 
+    font-family:Calibri light;
+    font-size:20px; 
+    text-align:justify; 
+    margin-left:80px; 
+    margin-right:80px;
+    line-height:30px;              /*line and paragraph spacing*/
+}
+
+.AssignmentDocumentationImage
+{ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px; 
+    height: auto;
+    text-align: center;
+}
+
+.AssignmentDocumentationVideo
+{ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 560px; 
+    height: 315px;
+}
+
+/* Download */
+.download 
+{ 
+    color:black;
+    font-size:17.5px; 
+    margin-left:100px; 
+    margin-right:80px;
+}
+
+
+
+/*About Program*/
+
+/*program section*/
+.ProgramSection
+{    
+    margin: 50px;
+   font-family:Calibri light;  
+}
+.ProgamDesc
+{
+    margin: 50px;
+    font-size: 30px;
+    font-weight:bold;   
+}
+.Logos
+{
+    display: flex;
+    justify-content:center;
+    align-items:center;    
+}
+
+/*instructors section*/
+.ProgramIns
+{
+    margin: 20px;
+    font-family:Calibri light;
+    background-color: black;
+    color: aliceblue;
+    width: 40%;
+    font-size: 40px;
+}
+.grid-container
+{
+    margin: 50px;
+    font-family:Calibri light;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    column-gap:20px; /* Gap between grid columns */
+    grid-row-gap: 10px; /* Gap between grid rows */
+}
+
+.grid-container > div
+{
+    padding: 10px;
+    font-size: 30px;
+}
+
+.images
+{
+    border-radius: 50%;
+}
+
+.item1Diaaimage
+{
+    padding: 10px; /* Padding for spacing */
+    overflow: hidden; /* Hide overflowing content */
+    white-space: pre-line; /* Prevent content from wrapping */ 
+    text-align: center;
+}
+
+.item2Karamimage
+{
+    padding: 10px; /* Padding for spacing */
+    overflow: hidden; /* Hide overflowing content */
+    white-space: pre-line; /* Prevent content from wrapping */
+    text-align: center;
+}
+
+.item3DiaaName
+{
+    font-weight:bold; 
+    padding: 10px; /* Padding for spacing */
+    overflow: hidden; /* Hide overflowing content */
+    white-space: pre-line; /* Prevent content from wrapping */
+    text-align: center;
+}
+
+.item4KaramName
+{
+    font-weight:bold;
+    padding: 10px; /* Padding for spacing */
+    overflow: hidden; /* Hide overflowing content */
+    white-space: pre-line; /* Prevent content from wrapping */
+    text-align: center;
+}
+
+.item5DiaaAbout
+{
+    padding: 10px; /* Padding for spacing */
+    overflow: hidden; /* Hide overflowing content */
+    white-space: pre-line; /* Prevent content from wrapping */
+    background-color: rgba(255, 121, 0,.65);
+    text-align: justify;
+    border-top-left-radius: 30px;
+}
+
+.item6KaramAbout
+{
+    padding: 10px; /* Padding for spacing */
+    overflow: hidden; /* Hide overflowing content */
+    white-space: pre-line; /* Prevent content from wrapping */
+    background-color: rgba(255, 121, 0,.65);
+    text-align: justify;
+    border-top-right-radius: 30px;
+}
+
+.item7DiaaIcons
+{
+    border-bottom-left-radius: 30px;
+   background-color: rgba(255, 121, 0,.4);
+    text-align: center;
+}
+
+.item8KaramIcons
+{
+    border-bottom-right-radius: 30px;
+    background-color: rgba(255, 121, 0,.4);
+    text-align: center;
+}
+
+
+/* NRCstyle.css */
+/* Background Photo Styling */
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar img {
+    height: 60px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffcc00;
+}
+
+/* Assignment Header Styling */
+.AssignmentHeader {
+    position: relative;
+    height: 400px; /* Adjust as needed */
+    overflow: hidden;
+}
+
+.Assignmentsbackgroundimg {
+    background-image: url('images/HiRes-1024x623.jpg'); /* Update with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    transition: opacity 0.5s ease;
+}
+
+.Assignmentsbackgroundimg img {
+    width: 100%;
+    height: auto;
+    opacity: 0; /* Hidden initially */
+    transition: opacity 0.5s ease;
+}
+
+.Assignmentsbackgroundimg h1 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 3em;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.Assignmentsbackgroundimg .one {
+    font-size: 2.5em;
+}
+
+.Assignmentsbackgroundimg .two {
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.Assignmentsbackgroundimg .two:hover {
+    color: #ff9900;
+    transform: scale(1.2);
+}
+
+/* Hover effect to reveal background image */
+.Assignmentsbackgroundimg .two:hover ~ img {
+    opacity: 1;
+}
+
+/* Introduction Section Styling */
+.AssignmentIntroduction {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.AssignmentIntroduction h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.AssignmentIntroduction ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Assignment Task Styling */
+.AssignmentTask {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.AssignmentTask h2, .AssignmentTask h3, .AssignmentTask h4 {
+    color: #333;
+}
+
+.AssignmentTask pre {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+}
+
+/* Image Gallery */
+.image-gallery {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Key Differences Section Styling */
+.key-differences {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.key-differences h3 {
+    color: #333;
+}
+
+.key-differences h4 {
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+    }
+
+    .Assignmentsbackgroundimg h1 {
+        font-size: 2em;
+    }
+
+    .Assignmentsbackgroundimg .two {
+        font-size: 2.5em;
+    }
+}
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar img {
+    height: 60px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Grid Container */
+.Homegrid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Homegrid-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Homegrid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.itemA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.itemB img {
+    border-radius: 10px;
+}
+
+.itemC {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1em;
+    color: #666;
+}
+
+/* Contact Me Section */
+.AboutContact {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-top: 5px solid #ffcc00;
+}
+
+.AboutContact h2 {
+    margin: 0 0 10px;
+    font-size: 2em;
+    color: #ffcc00;
+}
+
+.AboutContact p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.AboutContact a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: opacity 0.3s ease;
+}
+
+.AboutContact a:hover {
+    opacity: 0.7;
+}
+
+.AboutContact img {
+    vertical-align: middle;
+}
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar img {
+    height: 60px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Grid Container */
+.Homegrid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Homegrid-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Homegrid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.itemA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.itemB img {
+    border-radius: 10px;
+}
+
+.itemC {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1em;
+    color: #666;
+}
+
+/* Contact Me Section */
+.AboutContact {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-top: 5px solid #ffcc00;
+}
+
+.AboutContact h2 {
+    margin: 0 0 10px;
+    font-size: 2em;
+    color: #ffcc00;
+}
+
+.AboutContact p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.AboutContact a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: opacity 0.3s ease;
+}
+
+.AboutContact a:hover {
+    opacity: 0.7;
+}
+
+.AboutContact img {
+    vertical-align: middle;
+}
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar img {
+    height: 60px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Grid Container */
+.Homegrid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Homegrid-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Homegrid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.itemA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.itemB img {
+    border-radius: 10px;
+}
+
+.itemC {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1em;
+    color: #666;
+}
+
+/* Contact Me Section */
+.AboutContact {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-top: 5px solid #ffcc00;
+}
+
+.AboutContact h2 {
+    margin: 0 0 10px;
+    font-size: 2em;
+    color: #ffcc00;
+}
+
+.AboutContact p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.AboutContact a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: opacity 0.3s ease;
+}
+
+.AboutContact a:hover {
+    opacity: 0.7;
+}
+
+.AboutContact img {
+    vertical-align: middle;
+}
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar img {
+    height: 60px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Grid Container */
+.Homegrid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Homegrid-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Homegrid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.itemA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.itemB img {
+    border-radius: 10px;
+}
+
+.itemC {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1em;
+    color: #666;
+}
+
+/* Contact Me Section */
+.AboutContact {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-top: 5px solid #ffcc00;
+}
+
+.AboutContact h2 {
+    margin: 0 0 10px;
+    font-size: 2em;
+    color: #ffcc00;
+}
+
+.AboutContact p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.AboutContact a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: opacity 0.3s ease;
+}
+
+.AboutContact a:hover {
+    opacity: 0.7;
+}
+
+.AboutContact img {
+    vertical-align: middle;
+}

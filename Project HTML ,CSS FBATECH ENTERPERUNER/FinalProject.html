@@ -1,0 +1,265 @@
+<!DOCTYPE html> <!-- تعريف ملف HTML !-->
+<html>
+    
+    <!-- Head !-->
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Assignments-FinalProject </title>
+        <link rel="stylesheet" href="NRCstyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <!--For socialmedia icons!-->
+    </head>
+    
+<!-- Body !-->
+    
+    <body>
+        <style> img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }</style>
+        <div class="navbar">
+            <img src="images/Logo1.jpg" style="height:80px;" alt="App Inventor Logo">
+            <a href="ProgramAssignments.html"> Program Assignments </a>
+            <a href="AboutProgram.html"> About Program </a>
+            <a href="index.html"> Home </a>
+        </div>
+
+<!-- Assignment Header !-->
+        
+        <div class="AssignmentHeader" id="home">     
+            <div class="Assignmentsbackgroundimg">
+                <br>              
+                <h1 class="one"> SSBP </h1>
+                <h1 class="two"> Smart Switch Button Pusher</h1>
+                <br>
+                <br>
+            </div> 
+        </div>
+ 
+<!-- Assignment Documentation !-->
+
+
+<style>
+    h2 {
+      color: #333; /* اللون الافتراضي للنص */
+      transition: color 0.3s, background-color 0.3s; /* تأثير الانتقال */
+      padding: 10px; /* إضافة بعض المساحة حول النص */
+      border-radius: 5px; /* إضافة زوايا دائرية */
+    }
+  
+    h2:hover {
+      color: #fff; /* تغيير لون النص عند اللمس */
+      background-color: #4CAF50; /* تغيير لون الخلفية عند اللمس */
+    }
+  </style>
+  
+        <div class="AssignmentDocumentation">
+            <h2>Project Introduction</h2>
+            <p> 
+                The <b>"Smart Switch Button"</b> project aims to design a remote-controlled smart switch 
+                for electrical devices,<br> operated via a mobile app or web interface. <br> The project 
+                utilizes Internet of Things (IoT) technology to enable device control from anywhere, <br>
+                offering convenience and improving energy efficiency.
+            </p>
+            
+            <h3>Project Objectives:</h3>
+            <ul>
+                <li>Remote control of electrical devices.</li>
+                <li>Enhanced energy consumption management.</li>
+                <li>Increased safety in smart homes.</li>
+                <li>User-friendly interface.</li>
+            </ul>
+            <h2>Short Explain about Components Used </h2>
+<p>
+    The "Smart Switch Button" project utilizes the following components:
+</p>
+
+<ul>
+    <li><b>Servo Motor:</b> Used to physically control the switch mechanism, <br>allowing for the movement required to turn devices on or off.</li>
+    <li><b>ESP Controller (Wi-Fi & Bluetooth):</b> A microcontroller that connects to both Wi-Fi and Bluetooth,<br> enabling remote control of the switch via a mobile app or web interface.</li>
+    <li><b>9V Battery:</b> Provides the necessary power supply to the system, <br>ensuring consistent operation of the servo motor and controller.</li>
+    <li><b>Touch Sensor:</b> Acts as an input method,<br> allowing users to manually control the switch with a simple touch.</li>
+</ul>
+
+
+
+<style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #f2f2f2; /* لون الخلفية للجدول */
+    }
+  
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+  
+    th {
+      background-color: #4CAF50; /* لون الخلفية للرؤوس */
+      color: white;
+    }
+  
+    tr:nth-child(even) {
+      background-color: #f9f9f9; /* لون خلفية الصفوف الزوجية */
+    }
+  
+    tr:nth-child(odd) {
+      background-color: #fff; /* لون خلفية الصفوف الفردية */
+    }
+  
+    tr:hover {
+      background-color: #ddd; /* تغيير لون الخلفية عند تمرير الماوس */
+    }
+  </style>
+
+<h2>Table Of Components Used :</h2>
+
+<table border="1" style="width:100%; text-align:left;">
+    <tr>
+      <th>Component</th>
+      <th>Price (JD)</th>
+      <th>Link</th>
+    </tr>
+    
+    <tr>
+      <td>MG90 MG90S MICRO SERVO MOTOR - 360 DEGREE (HIGH QUALITY)</td>
+      <td>7.00</td>
+      <td><a href="https://mikroelectron.com/Product/MG90-MG90S-MICRO-SERVO-MOTOR-360-DEGREE-HIGH-QUALITY/" target="_blank">View Product</a></td>
+    </tr>
+    
+    <tr>
+      <td>Touch Switch Sensor Module Double-sided touchPad 4p/3p Interface</td>
+      <td>3.40</td>
+      <td><a href="https://waslleh.com/product/touch-switch-sensor-module-double-sided-touchpad-4p-3p-interface/" target="_blank">View Product</a></td>
+    </tr>
+    
+    <tr>
+      <td>ESP32 DEV KIT V1 WIFI BLUETOOTH NETWORKING DEVELOPMENT BOARD</td>
+      <td>7.90</td>
+      <td><a href="https://mikroelectron.com/Product/ESP32-dev-Kit-v1-WIFI-Bluetooth-Networking-Development-Board/" target="_blank">View Product</a></td>
+    </tr>
+    
+    <tr>
+      <td>Nickel-Cadmium (Ni-CD) Battery 9v 300mAh Rechargeable</td>
+      <td>5.50</td>
+      <td><a href="https://waslleh.com/product/nickel-cadmium-ni-cd-battery-9v-300mah-rechargeable/" target="_blank">View Product</a></td>
+    </tr>
+    
+    <tr>
+      <td>9V battery snap with male DC jack</td>
+      <td>0.40</td>
+      <td><a href="https://waslleh.com/product/9v-battery-snap-with-male-dc-jack/" target="_blank">View Product</a></td>
+    </tr>
+    
+    <tr>
+      <td>9V Battery Storage Case Holder with On/Off Switch</td>
+      <td>2.90</td>
+      <td><a href="https://waslleh.com/product/9v-battery-storage-case-holder-with-on-off-switch/" target="_blank">View Product</a></td>
+    </tr>
+  </table>
+  
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Final Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+        }
+        .step {
+            margin-bottom: 20px;
+        }
+        .step h2 {
+            color: #007acc;
+        }
+        .file-links {
+            margin-top: 10px;
+        }
+        .file-links a {
+            color: #007acc;
+            text-decoration: none;
+        }
+        .file-links a:hover {
+            text-decoration: underline;
+        }
+        video {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Final Project</h1>
+        <div class="step">
+            <h2>Step 1: Design the Box</h2>
+            <p>The box was designed using Fusion 360. Below are the design files:</p>
+            <div class="file-links">
+                <a href="final project/BOX v7.f3d" download>Download Fusion 360 File</a> | 
+                <a href="final project/BOX v7.step" download>Download STEP File</a>
+            </div>
+        </div>
+        <div class="step">
+            <h2>Step 2: 3D Printing</h2>
+            <p>The design was exported to Cura for 3D printing setup.</p>
+        </div>
+        <div class="step">
+            <h2>Step 3: Programming</h2>
+            <p>The components were programmed using Arduino IDE, ensuring smooth functionality.</p>
+             <div>
+              <a href="final project/finalprojectcode/finalprojectcode.ino">final project code </a>
+             </div>
+        </div>
+        <div class="step">
+            <h2>Step 4: Connecting with Blynk</h2>
+            <p>The components were then connected to the Blynk application to enable remote control and monitoring.</p>
+        </div>
+        <div class="step">
+            <h2>Project Video</h2>
+            <p>Watch the video below for an overview of the project:</p>
+            <video controls style="width: 480px; max-width: 100%; border-radius: 8px;">
+              <source src="final project/video for my final project.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+          
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+            
+<!-- Download !-->
+
+            <hr>
+
+           
+           
+        </div>
+    </body>
+</html>

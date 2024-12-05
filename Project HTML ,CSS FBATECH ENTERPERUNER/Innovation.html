@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignments - Innovation</title>
+    <link rel="stylesheet" href="NRCstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- For social media icons -->
+</head>
+
+<!-- Body -->
+<body>
+    <!-- Body Style -->
+    <style>
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+     <style>
+        /* تنسيق الصور */
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px; /* زوايا مدورة */
+            border: 2px solid #ddd; /* حافة خفيفة */
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* تأثير عند التمرير على الصورة */
+        img:hover {
+            transform: scale(1.05); /* تكبير الصورة قليلاً */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* إضافة ظل */
+        }
+
+        /* تنسيق الفقاعات لشرح الصور */
+        .img-container {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        /* تنسيق الشرح الذي يظهر عند التمرير */
+        .img-container:hover .img-description {
+            opacity: 1;
+        }
+
+        .img-description {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            font-size: 14px;
+        }
+    </style>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <img src="images/Logo1.jpg" style="height:80px;" alt="App Inventor Logo">
+        <a href="ProgramAssignments.html">Program Assignments</a>
+        <a href="AboutProgram.html">About Program</a>
+        <a href="index.html">Home</a>
+    </div>
+
+    <!-- Assignment Header -->
+    <div class="AssignmentHeader" id="home">
+        <div class="Assignmentsbackgroundimg">
+            <img src="images/Orange_Fab_Lab_Irbid75.jpg" alt="Background Image">
+            <h1 class="one"></h1>
+            <h1 class="two">Innovation</h1>
+        </div>
+    </div>
+
+    <!-- Introduction Section -->
+    <div class="AssignmentIntroduction">
+        <h2>INTRODUCTION</h2>
+        <p>
+            It was fun to be a guest at these resorts, especially for Orange Fab Lab, managed by Mr. Shadi Al-Bis,<br> Engineer Karam Khreis, and Engineer Diaa Zaghoul,<br> who hold a university position in the field of technology development.
+        </p>
+        <p>
+            On the first day of the first week,<br> Mr. Shadi Al-Bis gave a motivational lecture about success stories of people who worked hard, followed a specific plan, and succeeded.
+        </p>
+        <p>
+            Eng. Diaa Zaghoul also explained the sites where we find resources for projects. Example websites:
+        </p>
+        <ul>
+            <li><a href="https://www.instructables.com/">Instructables</a></li>
+            <li><a href="https://www.hackster.io/arduino/projects">Hackster</a></li>
+        </ul>
+    </div>
+
+    <!-- First Task Section -->
+    <div class="AssignmentTask">
+        <h2>THE FIRST TASK WAS:</h2>
+        <p>COLLECT THREE IDEAS FOR THE FAB LAB AND DISCUSS THEM WITH YOUR TEAM MATES.</p>
+
+        <h3>1. Coin collector and register for vending machines</h3>
+        <p>You will learn how to create a vending machine coin collector and register using Arduino.</p>
+
+        <h4>Things used in this project:</h4>
+        <ul>
+            <li>Coin collector arcade game</li>
+            <li>LCD Display 20x4</li>
+            <li>CB Customized PCB</li>
+            <li>Arduino UNO</li>
+        </ul>
+
+        <h4>Software apps and services:</h4>
+        <ul>
+            <li>Arduino IDE</li>
+        </ul>
+
+       
+
+        <img src="c:\Users\user\OneDrive\Desktop\abdo1.JPG" alt="Coin collector photo" width="500">
+
+      
+        <p><strong>Reference:</strong> <a href="https://www.hackster.io/arduino/projects">hakster.jo</a></p>
+    </div>
+
+    <!-- Second Project -->
+    <div class="AssignmentTask">
+        <h3>2. Controlling an Arduino Car with a Remote</h3>
+        <ul>
+            <li>4 x 5V DC MOTORS</li>
+            <li>1 x L298N - DRIVER FOR STEPPER MOTOR</li>
+            <li>1 x ARDUINO UNO R3</li>
+            <li>4 x WHEELS</li>
+        </ul>
+        <img src="c:\Users\user\OneDrive\Desktop\Screenshot 2024-06-25 142311.png" alt="Car remote photo" width="500">
+
+        <p><a href="https://youtu.be/Cw3SF7lu">Watch the project video</a></p>
+    </div>
+
+    <hr>
+
+    <!-- Entrepreneur Session -->
+    <section class="AssignmentIntroduction">
+        <h2>Entrepreneur Session</h2>
+        <p>On the second day, we attended an <strong>Entrepreneur Session</strong> led by Mr. Mohammed Muqabla,<br>
+             who shared entrepreneurial ideas. One example was a low-cost watch with QR code and GPS, adopted by schools in Amman.</p>
+        <ul>
+            <li>QR code for scanning.</li>
+            <li>GPS integration.</li>
+        </ul>
+
+        <p>My idea was a <strong>smart wallet</strong> with an electronic lock and GPS tracking.</p>
+        <img src="c:\Users\user\OneDrive\Desktop\smart wallet is lightweight,.jpeg" alt="Smart wallet" width="500">
+    </section>
+
+    <hr>
+
+    <!-- Design Sprint and Design Thinking -->
+    <div class="container">
+        <h3>Design Sprint and Design Thinking</h3>
+        <p>On the fifth day, we learned about "Design Sprint and Design Thinking." We worked in teams to solve problems.</p>
+        <img src="images/img-design-sprint-think-2.png" alt="Design Sprint and Design Thinking" width="500">
+        <br><br><hr>
+    </div>
+
+    <div class="key-differences">
+        <h3>Key Differences</h3>
+        <h4>1. Can We?</h4>
+        <p>This focuses on the feasibility of ideas. <img src="images/HMW.jpg" alt="Can We" width="400"></p>
+
+        <h4>2. 2-year Goal</h4>
+        <p>The broader vision guiding innovation. <img src="images/2=yeargoal.jpg" alt="2-year goal" width="400"></p>
+
+        <h4>3. HMW (How Might We)</h4>
+        <p>HMW turns challenges into opportunities by framing problems as questions. <img src="images/can we.jpg" alt="HMW" width="400"></p>
+    </div>
+
+</body>
+</html>

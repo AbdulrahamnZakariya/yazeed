@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+    
+    <!-- Head -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Assignments-ArduinoProgramming</title>
+        <link rel="stylesheet" href="NRCstyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <!--For social media icons-->
+    </head>
+    
+    <!-- Body -->
+    <body>     <!-- Body Style -->
+        <style>
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+         <style>
+            /* تنسيق الصور */
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px; /* زوايا مدورة */
+                border: 2px solid #ddd; /* حافة خفيفة */
+                max-width: 100%;
+                height: auto;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+    
+            /* تأثير عند التمرير على الصورة */
+            img:hover {
+                transform: scale(1.05); /* تكبير الصورة قليلاً */
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* إضافة ظل */
+            }
+    
+            /* تنسيق الفقاعات لشرح الصور */
+            .img-container {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+            }
+    
+            /* تنسيق الشرح الذي يظهر عند التمرير */
+            .img-container:hover .img-description {
+                opacity: 1;
+            }
+    
+            .img-description {
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: rgba(0, 0, 0, 0.7);
+                color: white;
+                padding: 5px 10px;
+                border-radius: 5px;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                font-size: 14px;
+            }
+        </style>
+        <div class="navbar">
+            <img src="images/Logo1.jpg" style="height:80px;" alt="App Inventor Logo">
+            <a href="ProgramAssignments.html"> Program Assignments </a>
+            <a href="AboutProgram.html"> About Program </a>
+            <a href="index.html"> Home </a>
+        </div>
+
+        <!-- Assignment Header -->
+        <div class="AssignmentHeader" id="home">     
+            <div class="Assignmentsbackgroundimg">
+                <br>              
+                <h1 class="one"></h1>
+                <h1 class="two">Arduino and Tinkercad Overview</h1>
+                <br>
+                <br>
+            </div> 
+        </div>
+ 
+        <!-- Assignment Documentation -->
+        <div class="AssignmentDocumentation">
+            <h2>Lecture Overview</h2>
+            <p> 
+                Today, we attended a lecture given by Engineer Malek Salama from Orange Company. The lecture covered the basics of Arduino, explaining its features, uses, benefits, and limitations. Arduino is a powerful tool for creating interactive projects that control various physical components, such as lights, sensors, and motors.
+            </p>
+            
+            <h3>Benefits of Arduino:</h3>
+            <ul>
+                <li>Open-source and easy to use for beginners.</li>
+                <li>Large community support with many resources available.</li>
+                <li>Can be used for a wide range of applications like robotics, IoT, and more.</li>
+            </ul>
+
+            <h3>Drawbacks of Arduino:</h3>
+            <ul>
+                <li>Limited processing power compared to more advanced microcontrollers.</li>
+                <li>Not suitable for complex computational tasks.</li>
+            </ul>
+
+            <p>
+                Engineer Malek emphasized how Arduino enables rapid prototyping and simplifies circuit building for both students and professionals. The practical demonstration showed us how to build circuits and control them using simple code.
+            </p>
+            
+            <!-- Images Section -->
+            <h2>Images from the Lecture</h2>
+            <div class="image-gallery">
+                <h4>This the kit we use it on the lectures</h4>
+                <img class="AssignmentDocumentationImage" src="Arduino Programming/ar kit.jpg" alt="Arduino Setup Image 1"width="450"><br><br>
+                
+                <img class="AssignmentDocumentationImage" src="Arduino Programming/ard kit .jpg" alt="Arduino Setup Image 2"width="450"><br><br><hr>
+                <h4>Arduino Uno</h4>
+                <img class="AssignmentDocumentationImage" src="Arduino Programming/ard uno.jpg" alt="Arduino Setup Image 3"width="450"><br><br><hr>
+                <h4>LCD LED</h4>
+                <img class="AssignmentDocumentationImage" src="Arduino Programming/led lcd.jpg" alt="Arduino Setup Image 4"width="450"><br><br><hr>
+                
+            </div>
+            
+            <h2>Arduino IDE and Programming Basics</h2>
+<p>
+    During the lecture, we also downloaded the <b><a href="https://www.arduino.cc/en/software">Arduino IDE</a></b>, which is the official software used for writing and uploading code to Arduino boards. The installation process was straightforward, and the IDE provides a simple interface to write, compile, and upload code to the Arduino.
+</p>
+
+
+<p>
+    We started by learning the basics of Arduino programming, such as setting up a simple program called a <b>"sketch"</b>. The structure of an Arduino sketch includes two main functions:
+</p>
+
+<ul>
+    <li><b>void setup()</b> – This function runs once when the Arduino board is powered on. It is used to initialize variables, pin modes, and libraries.</li>
+    <li><b>void loop()</b> – After the setup, the loop function runs continuously. It is used to repeatedly execute a set of instructions, making it ideal for handling tasks that need to be checked or performed constantly.</li>
+</ul>
+<img src="Arduino Programming/ard i.png" alt=""width="450">
+
+<p>
+    We practiced simple commands, such as making an LED blink using the <code>digitalWrite()</code> and <code>delay()</code> functions, which are fundamental in controlling electronic components through code.
+</p>
+<h2>Understanding digitalWrite(), digitalRead(), analogWrite(), and analogRead()</h2>
+<p>
+    In Arduino programming, we frequently use these four functions to interact with digital and analog pins. Here's the difference between them:
+</p>
+
+<h3>digitalWrite()</h3>
+<p>
+    This function is used to set the state of a digital pin to either <b>HIGH</b> (5V) or <b>LOW</b> (0V). It is typically used to control components like LEDs or relays.
+</p>
+<pre><code>
+digitalWrite(pin, HIGH);  // Turns on the component connected to the pin
+digitalWrite(pin, LOW);   // Turns off the component connected to the pin
+</code></pre>
+
+<h3>digitalRead()</h3>
+<p>
+    This function reads the current state of a digital pin (either HIGH or LOW). It is used to read input from components like buttons or sensors that provide digital signals.
+</p>
+<pre><code>
+int state = digitalRead(pin);  // Reads whether the pin is HIGH or LOW
+</code></pre>
+
+<h3>analogWrite()</h3>
+<p>
+    This function outputs a PWM (Pulse Width Modulation) signal on a pin, which can simulate an analog signal. It’s used for controlling components like LEDs with varying brightness or motors with varying speed.
+</p>
+<pre><code>
+analogWrite(pin, value);  // Sends a PWM signal with a value between 0 (off) and 255 (full on)
+</code></pre>
+
+<h3>analogRead()</h3>
+<p>
+    This function reads the value from an analog input pin, which can be a value between 0 and 1023. It's often used to read sensors that provide varying voltage levels, such as potentiometers or temperature sensors.
+</p>
+<pre><code>
+int sensorValue = analogRead(pin);  // Reads an analog value between 0 and 1023
+</code></pre>
+
+
+
+            <h3>Tinkercad Introduction</h3>
+            <p>
+                In addition to Arduino, we were introduced to <b><a href="https://www.tinkercad.com/dashboard">Tinkercad</a></b>, an online platform where we can simulate electronic circuits. We used Tinkercad to create virtual Arduino circuits and test different components like LEDs, resistors, and motors. This platform is very useful for testing designs before implementing them physically. It's easy to use and allows us to make adjustments quickly.
+            </p>
+            <img src="Arduino Programming/tinkercad i.png" alt=""width="600">
+
+            <p>
+                Through Tinkercad, we simulated a complete circuit where we connected sensors and controlled them through Arduino code. This made the process of building and testing circuits much more efficient, especially for beginners.
+            </p>
+            <img src="Arduino Programming/tinkercad.png" alt=""width="600">
+
+            <br>
+
+           
+            <div class="container">
+                <h1>What is an Ultrasonic Sensor?</h1>
+                <p>
+                    An ultrasonic sensor uses high-frequency sound waves to detect objects and measure distances. 
+                    It works by emitting ultrasonic waves and measuring the time it takes for the echo to return.
+                </p>
+                
+                <h2>Common Uses</h2>
+                <ul class="usage">
+                    <li>Distance measurement for robots and automation systems.</li>
+                    <li>Obstacle avoidance in autonomous vehicles.</li>
+                    <li>Monitoring liquid levels in tanks.</li>
+                    <li>Security systems for motion detection.</li>
+                    <li>Car parking assistance systems.</li>
+
+                </ul>
+                <img src="Arduino Programming/ultarSonic sensor.jpg" alt=""width="600">
+                <br><hr><br>
+                <h3>Ultrasonic CODE :</h3><br>
+                <img src="Arduino Programming/code ultrasonic.jpg" alt=""width="600">
+
+
+                </div>
+                <div class="container">
+                    <h1>What is a PIR Sensor?</h1>
+                    <p>
+                        A PIR (Passive Infrared) sensor detects infrared radiation emitted by warm objects, such as humans or animals, 
+                        and is commonly used in security systems and motion-activated lighting.
+                    </p>
+                    
+                    <h2>Common Uses</h2>
+                    <ul class="usage">
+                        <li>Security alarms to detect intruders.</li>
+                        <li>Automatic lighting systems in homes and public spaces.</li>
+                        <li>Home automation to control devices based on occupancy.</li>
+                        <li>Energy-saving systems to reduce power consumption.</li>
+                        <li>Interactive games and entertainment systems.</li>
+                    </ul>
+                    <img src="Arduino Programming/pir0 sensor.jpg" alt=""width="600"><br><br>
+                    <img src="Arduino Programming/pir1 sensor.jpg " alt=""width="600"><br><br>
+                    <img src="Arduino Programming/pir code.jpg " alt=""width="600">
+
+
+
+                </div>
+                <div class="container">
+                    <h1>What is a Soil Sensor?</h1>
+                    <p>
+                        A soil sensor measures various soil properties such as moisture, temperature, and pH levels. 
+                        It's used in smart irrigation systems, agriculture, and environmental studies to monitor soil conditions.
+                    </p>
+                    
+                    <h2>Common Uses</h2>
+                    <ul class="usage">
+                        <li>Smart irrigation systems for optimal watering.</li>
+                        <li>Precision farming to manage crops more efficiently.</li>
+                        <li>Home and commercial garden monitoring.</li>
+                        <li>Environmental research and studies.</li>
+                        <li>Greenhouse automation systems.</li>
+                    </ul>
+                    <img src="Arduino Programming/soil sensor.jpeg" alt=""width="600"><br><br>
+                    <img src="Arduino Programming/code soile sensor.jpg" alt=""width="600">
+
+
+                </div>
+                <div class="container">
+                    <h1>LCD (Liquid Crystal Display) - Arduino and Potentiometer</h1>
+            
+                    <h2>What is an LCD?</h2>
+                    <p>LCD stands for <strong>Liquid Crystal Display</strong>. It is used in devices like TVs, monitors, and portable gadgets, working by aligning liquid crystals to block light and create images.</p>
+                    <img src="Arduino Programming/lcd lham.jpg" alt=""width="600">
+                    <h2>Common Uses</h2>
+                    <ul>
+                        <li>Digital clocks and watches</li>
+                        <li>TVs and monitors</li>
+                        <li>Calculators, handheld devices</li>
+                    </ul>
+            
+                    <h2>Pros</h2>
+                    <ul>
+                        <li>Energy-efficient and bright</li>
+                        <li>Lightweight and available in many sizes</li>
+                    </ul>
+            
+                    <h2>Cons</h2>
+                    <ul>
+                        <li>Limited viewing angles</li>
+                        <li>Lower refresh rates</li>
+                    </ul>
+            
+                    <h2>Arduino Integration</h2>
+                    
+                    <p>You can connect an LCD to an Arduino using the <code>LiquidCrystal</code> library. Additionally, a potentiometer helps adjust screen contrast.</p>
+                    <h4>LCD with potentiometer</h4>
+                    <img src="Arduino Programming/lcd with potiMeter.jpg" alt=""width="600">
+                    <br><br><hr>
+                    <h4>Testing Volt OF LCD By VoltMeter</h4>
+                    <img src="Arduino Programming/test volt.jpg " alt=""width="600">
+                    <br><br><hr>
+                    <h4> Welding Components </h4>
+                    <img src="Arduino Programming/component lham.jpg " alt=""width="600">
+
+
+                    
+                    <h3>Required Components:</h3>
+                    <ul>
+                        <li>Arduino Uno</li>
+                        <li>16x2 LCD</li>
+                        <li>10k ohm Potentiometer</li>
+                        <li>Breadboard and jumper wires</li>
+                    </ul>
+            
+                    <h3>Wiring:</h3>
+                    <ul>
+                        <li><strong>VSS:</strong> Ground</li>
+                        <li><strong>VDD:</strong> 5V</li>
+                        <li><strong>V0:</strong> Potentiometer (contrast adjustment)</li>
+                        <li><strong>RW:</strong> Ground</li>
+                        <li><strong>Pins 4, 6, 11, 12, 13, 14:</strong> Arduino pins</li>
+                    </ul>
+                    <h4>LCD CODE: </h4>
+                    <img src="Arduino Programming/lcd code 1.jpg " alt=""width="600">
+
+            
+                    <h2>Conclusion</h2>
+                    <p>LCDs are versatile displays commonly used in electronics projects. When paired with Arduino and a potentiometer, you can control the display and adjust contrast easily.</p>
+                </div>
+                <div class="container">
+                    <h1>RGB LED - Overview and Uses</h1>
+            
+                    <h2>What is an RGB LED?</h2>
+                    <p>RGB LED is a type of light-emitting diode that combines red, green, and blue LEDs in one package. By adjusting the intensity of each color, it can produce a wide range of colors.</p>
+                    <img src="Arduino Programming/rgb led.jpeg" alt=""width="600">
+
+                    <h2>Common Uses</h2>
+                    <ul>
+                        <li>Decorative lighting in homes and events</li>
+                        <li>Color-changing lamps</li>
+                        <li>LED displays and signage</li>
+                        <li>Indicating system states in electronic devices</li>
+                    </ul>
+            
+                    <h2>Pros</h2>
+                    <ul>
+                        <li>Energy-efficient and long-lasting</li>
+                        <li>Ability to produce millions of colors</li>
+                        <li>Compact and easy to integrate into projects</li>
+                    </ul>
+            
+                    <h2>Arduino Integration</h2>
+                    <p>RGB LEDs can be controlled using Arduino by adjusting the PWM (Pulse Width Modulation) signals on its red, green, and blue pins, allowing for dynamic color changes.</p>
+                    <h3>rgb code: </h3>
+                    <img src="Arduino Programming/rgb code.jpg " alt=""width="600">
+
+                    <h2>Conclusion</h2>
+                    <p>RGB LEDs are versatile and widely used in creative lighting projects, offering flexibility in color control and efficiency in power consumption.</p>
+                </div>
+
+                <div class="container">
+                    <h1>Joystick - Overview and Uses</h1>
+            
+                    <h2>What is a Joystick?</h2>
+                    <p>A joystick is an input device that allows control of movement in two axes: X (horizontal) and Y (vertical). It often includes a button for additional functionality and is commonly used in gaming and robotics.</p>
+                    <img src="Arduino Programming/ps4 joystick.jpg " alt=""width="600">
+
+                    <h2>Common Uses</h2>
+                    <ul>
+                        <li>Control systems in video games</li>
+                        <li>Robotics and automation control</li>
+                        <li>Remote-controlled vehicles and drones</li>
+                        <li>Camera gimbal systems</li>
+                    </ul>
+            
+                    <h2>Pros</h2>
+                    <ul>
+                        <li>Precise control in multiple directions</li>
+                        <li>Intuitive and easy to use</li>
+                        <li>Compact and widely available</li>
+                    </ul>
+            
+                    <h2>Arduino Integration</h2>
+                    <p>Joysticks can be connected to Arduino by reading analog values from the X and Y axes, allowing for control of motors, servos, or other devices in interactive projects.</p>
+                    <img src="Arduino Programming/joyStick.jpg" alt=""width="600">
+                    <br><br> <hr> 
+                    <img src="Arduino Programming/code joyStick.jpg " alt=""width="600">
+
+
+                    <h2>Conclusion</h2>
+                    <p>Joysticks are versatile input devices used in a variety of applications from gaming to robotics, offering precision control and ease of integration with microcontroller projects like Arduino.</p>
+                </div>
+                <div class="container">
+                    <h1>Keypad - Overview and Uses</h1>
+            
+                    <h2>What is a Keypad?</h2>
+                    <p>A keypad is a small input device consisting of multiple buttons (keys), typically arranged in rows and columns. It is commonly used to input numbers, characters, or commands into a system.</p>
+                    <img src="Arduino Programming/keyPad.jpg" alt=""width="600">
+
+                    <h2>Common Uses</h2>
+                    <ul>
+                        <li>Security systems (e.g., entering PINs)</li>
+                        <li>Home appliances (e.g., microwaves, washing machines)</li>
+                        <li>Automated access control systems</li>
+                        <li>Numerical input for calculators and other devices</li>
+                    </ul>
+            
+                    <h2>Pros</h2>
+                    <ul>
+                        <li>Simple and intuitive input method</li>
+                        <li>Reliable for numeric and character inputs</li>
+                        <li>Compact and easy to integrate into projects</li>
+                    </ul>
+            
+                    <h2>Arduino Integration</h2>
+                    <p>Keypads can be connected to Arduino using a matrix configuration, where each button is assigned to a row and column. The <code>Keypad</code> library helps in detecting key presses and processing inputs efficiently.</p>
+                    <img src="Arduino Programming/keyPad code.jpg " alt=""width="600">
+
+                    <h2>Conclusion</h2>
+                    <p>Keypads are commonly used in systems that require numeric or character input, offering a straightforward and reliable way to interface with electronic devices.</p>
+                </div>
+
+            <!-- Download Section -->
+            <hr>
+
+            <p>
+                <b> You can download my files here: </b>
+            </p>
+
+            <div class="download">
+                <ul>
+                    <li><a href="Arduino Programming/videos of arduino sensors"><b>Videos For Experiments On FabLab</b></a></li>          <!-- Put your file links here! -->
+                    <li><a href=""></a></li>          <!-- Put your file links here! -->
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
